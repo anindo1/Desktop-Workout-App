@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PendingGoalsController">
+    <children>
+        <AnchorPane>
+            <children>
+                <ImageView fx:id="background" fitHeight="564.0" fitWidth="1105.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="titleImage" fitHeight="75.0" fitWidth="116.0" layoutX="902.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fill="WHITE" layoutX="340.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Goals (Priority, Goal, Targeted Date)" wrappingWidth="205.6061248779297">
+               <font>
+                  <Font name="Stencil" size="12.0" />
+               </font>
+            </Text>
+            <ListView fx:id="listView" layoutX="47.0" layoutY="249.0" prefHeight="166.0" prefWidth="527.0" />
+            <Button layoutX="274.0" layoutY="466.0" mnemonicParsing="false" onAction="#accomplishGoal" text="Accomplish a Goal">
+               <font>
+                  <Font name="Stencil" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="416.0" layoutY="465.0" mnemonicParsing="false" onAction="#deleteGoal" prefHeight="25.0" prefWidth="114.0" text="Delete a Goal">
+               <font>
+                  <Font name="Stencil" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="265.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a pending goal then click the accomplish/delete buttons to accomplish/delete the goal" wrappingWidth="301.23895263671875">
+               <font>
+                  <Font name="Stencil" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="anindoImg" fitHeight="247.0" fitWidth="211.0" layoutX="546.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="mainMenu" layoutX="45.0" layoutY="463.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="24.0" prefWidth="189.0" text="MAIN MENU">
+            <font>
+                <Font name="Stencil" size="12.0" />
+            </font>
+        </Button>
+      <Button fx:id="backButton" layoutX="45.0" layoutY="425.0" mnemonicParsing="false" onAction="#goBack" prefHeight="16.0" prefWidth="189.0" text="BACK">
+         <font>
+            <Font name="Stencil" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

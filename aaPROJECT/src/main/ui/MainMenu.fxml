@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainMenuController">
+<children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="mainMenuImage" fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="titleImage" fitHeight="75.0" fitWidth="116.0" layoutX="902.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="titleLogo" fitHeight="360.0" fitWidth="422.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <MenuButton fx:id="newAccountBar" graphicTextGap="7.0" layoutX="23.0" layoutY="325.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="177.0" text="Login">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#newAccount" text="New Account" />
+                <MenuItem mnemonicParsing="false" onAction="#loadAccountAction" text="Load Account" />
+              </items>
+               <font>
+                  <Font name="Stencil" size="16.0" />
+               </font>
+            </MenuButton>
+            <TextField fx:id="username" layoutX="23.0" layoutY="364.0" onKeyPressed="#loadAccount" prefHeight="13.0" prefWidth="294.0" />
+            <Text fx:id="error" layoutX="23.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Account Not Found">
+               <font>
+                  <Font name="Stencil" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+</children>
+</AnchorPane>
